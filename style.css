@@ -1,0 +1,492 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  
+  :root {
+    --top-navbar: #37356b;
+    --top-navbar-font: white;
+    --top-socila-link: #efdaa0;
+    --font-white: white;
+    --mubas-hero-box: #0c85b7;
+    --mubas-hero-box-next: #eeda9f;
+    --font-black: #00000;
+    --title-black: #929292;
+    --announcement: #f9f0d8;
+    --grey: grey;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  header {
+  
+  
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px 150px;
+      color: var(--top-navbar-font);
+      background-color: var(--top-navbar);
+  
+      img {
+        width: 60px;
+        height: 75px;
+        position: absolute;
+        z-index: 999;
+        top:0.4%;
+        transform: translateY(10%);
+      }
+  
+      section {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+  
+        ul {
+          display: flex;
+          padding: 6px;
+          justify-content: space-evenly;
+          flex-grow: 1;
+        }
+  
+        ul:first-child {
+          padding: 2px 20px;
+        }
+  
+      }
+    }
+  
+    ul {
+      list-style: none;
+    }
+  
+    /* TODO: make icons for this */
+    .secondarynav {
+      display: flex;
+      justify-content: right;
+      background-color: var(--top-socila-link);
+      gap: 20px;
+      padding: 20px;
+  
+    }
+  }
+  
+  #publications {
+    margin-left: 90px;
+  }
+  
+  .hero {
+    background-image: url("https://mubas.ac.mw/images/slider/slide1.jpg");
+    height: 500px;
+    display: flex;
+    color: var(--font-white);
+    justify-content: center;
+    align-items: center;
+  
+    section {
+      section {
+        h2:first-child {
+          padding: 0px 0px 23px 0px;
+          border-bottom: 1px solid var(--font-white);
+  
+        }
+  
+        h2:last-child {
+          font-size: 40px;
+          color: var(--mubas-hero-box-next);
+        }
+  
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        background-color: var(--mubas-hero-box);
+        height: 180px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 60px;
+        border-radius: 13px 0px 0px 13px;
+      }
+  
+    }
+  
+  }
+  
+  .mubas-box {
+    background-color: var(--mubas-hero-box-next);
+    width: 700px;
+    border-radius: 13px;
+  
+    .mubas-box-info {
+      width: 650px;
+    }
+  }
+  
+  .blogs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -90px;
+  
+    .quicklink {
+  
+      width: 330px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      h4 {
+        text-transform: uppercase;
+        color: var(--font-white);
+  
+        span {
+          color: var(--mubas-hero-box-next);
+        }
+      }
+  
+      section {
+        display: flex;
+        justify-content: center;
+        color: var(--font-white);
+        flex-grow: 1;
+        padding: 12px;
+  
+        section {
+  
+          gap: 30px;
+        }
+      }
+  
+      .firstlinks {
+  
+        background-color: var(--mubas-hero-box);
+        flex-direction: column;
+        border-radius: 12px 12px 0px 0px;
+      }
+  
+      .shortlinks {
+        background-color: var(--mubas-hero-box-next);
+        color: var(--font-black);
+        border-radius: 0px 0px 12px 12px;
+        gap: 80px;
+      }
+  
+      ul {
+        list-style: none;
+      }
+    }
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 330px;
+      gap: 12px;
+  
+      h3 {
+        text-transform: uppercase;
+        color: var(--title-black);
+        font-weight: 300;
+      }
+  
+  
+      img {
+  
+        border-bottom: 8px solid var(--mubas-hero-box);
+      }
+  
+      section {
+        gap: 4px;
+      }
+  
+      section>section:last-child {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  .save-a-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  
+    img {
+      width: 1050px;
+    }
+  }
+  
+  .announcements {
+    background-color: var(--announcement);
+    display: flex;
+    flex-direction: column;
+    padding: 13px 80px;
+    gap: 22px;
+  
+    section {
+      display: flex;
+      justify-content: space-between;
+  
+      ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+  
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+  
+          h3 {
+            font-weight: 300;
+          }
+  
+          p:nth-child(3) {
+            color: var(--title-black)
+          }
+        }
+      }
+    }
+  }
+  
+  .events {
+    background-color: var(--mubas-hero-box);
+  
+    padding: 20px 60px;
+    display: flex;
+    gap: 20px;
+  
+    h2 {
+      color: var(--font-white);
+    }
+  
+    section {
+  
+      section {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        background-color: var(--font-white);
+        align-items: center;
+  
+        img {
+          border-bottom: 8px solid var(--mubas-hero-box-next);
+        }
+  
+        h3 {
+          color: var(--mubas-hero-box);
+        }
+  
+        p:nth-child(3) {
+          padding: 0px 65px 10px 65px;
+          border-bottom: 2px solid var(--grey);
+          flex-grow: 1;
+          text-align: center;
+        }
+  
+        p:last-child {
+          margin-top: 12px;
+          margin: 12px 0px 50px;
+        }
+      }
+  
+    }
+  }
+  
+  
+  
+  /* NOT NESTED */
+  
+  
+  .nav-container {
+    font-family: Arial, sans-serif;
+    background: #37356b;
+    padding: 15px;
+  }
+  
+  .main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav li {
+    position: relative;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .main-nav a:hover {
+    background: #eeda9f;
+    border-radius: 4px;
+  }
+  
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:#1b5f9a;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 15px;
+  }
+  
+  .dropdown-menu a {
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #eeda9f;
+  }
+  
+  #publications a {
+    color: white;
+    
+  }
+  
+  
+  .footer {
+    background-color: #32455a;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .footer-section p, 
+  .footer-section ul, 
+  .footer-section a {
+    font-size: 14px;
+    color: #cccccc;
+    text-decoration: none; 
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  
+  .social-icons a {
+    font-size: 80px;
+    margin-right: 15px;
+    color: white;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00; 
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #aaaaaa;
+    padding: 20px 0 0;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  
+  
+  .social-media-video {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .social-media-video h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  
+  .video-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+  }
+  
+  
+  .video-container {
+    width: 585px; 
+    height: 310px; 
+    overflow: hidden;
+    border-top: 4px solid #0077cc;
+    position: relative;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Responsive tweak */
+  @media (max-width: 1250px) {
+    .video-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
