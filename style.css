@@ -2,18 +2,23 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-
+font-family:Arial,Helvetica,sans-serif;
 }
 
+
 :root {
-  --top-navbar: #37356b;
+--top-navbar-rgba:rgba(59, 53, 137, 0.9);
+--top-navbar: #37356b;
+--mubas-blue:#0c85b7;
   --top-navbar-font: white;
-  --top-socila-link: #efdaa0;
+  --top-social-link: #efdaa0;
+  --top-social-link-rgba:rgba(239, 218, 160, 0.9);
+
   --font-white: white;
   --mubas-hero-box: #0c85b7;
   --mubas-hero-box-next: #eeda9f;
   --font-black: #00000;
-  --title-black: #929292;
+  --title-black: rgb(90,90,90);
   --announcement: #f9f0d8;
   --grey: grey;
 }
@@ -28,14 +33,16 @@ li {
 
 header {
 
+    position:sticky;
+    top:0px;
+    z-index:80;
 
   nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 10px 150px;
+    padding: 5px 150px;
     color: var(--top-navbar-font);
-    background-color: var(--top-navbar);
-
+    background-color: var(--top-navbar-rgba);
     img {
       width: 60px;
       height: 75px;
@@ -72,7 +79,7 @@ header {
   .secondarynav {
     display: flex;
     justify-content: right;
-    background-color: var(--top-socila-link);
+    background-color: var(--top-social-link-rgba);
     gap: 20px;
     padding: 20px;
 
@@ -83,7 +90,17 @@ header {
   margin-left: 90px;
 }
 
-
+.hero {
+  background-image: url("https://mubas.ac.mw/images/slider/slide1.jpg");
+  height: 500px;
+  display: flex;
+  
+  color: var(--font-white);
+  justify-content: center;
+  align-items: center;
+  background-size: cover; 
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 
   section {
     section {
@@ -185,11 +202,23 @@ header {
 
     h3 {
       text-transform: uppercase;
-      color: var(--title-black);
       font-weight: 300;
+      color: var(--title-black);
     }
 
 
+p{
+font-size:14px;
+
+      color: var(--title-black);
+line-height:1.5rem;
+
+}
+a {
+font-size:14px;
+
+color:var(--mubas-blue)
+}
     img {
 
       border-bottom: 8px solid var(--mubas-hero-box);
@@ -221,8 +250,20 @@ header {
   background-color: var(--announcement);
   display: flex;
   flex-direction: column;
-  padding: 13px 80px;
+  padding: 83px 280px;
+  justify-content:center;
   gap: 22px;
+  a{
+color:var(--mubas-blue);
+font-size:12px;
+
+  }
+  h2{
+font-size:30px;
+font-weight:200;
+color:var(--title-black);
+
+  }
 
   section {
     display: flex;
@@ -230,7 +271,7 @@ header {
 
     ul {
       display: flex;
-      gap: 20px;
+      gap: 30px;
       flex-direction: column;
 
       li {
@@ -241,10 +282,14 @@ header {
         h3 {
           font-weight: 300;
         }
-
+p:nth-child(2){
+font-size:14px;
+}
         p:nth-child(3) {
-          color: var(--title-black)
+          color: var(--title-black);
+	  font-size:13px;
         }
+	
       }
     }
   }
@@ -253,7 +298,7 @@ header {
 .events {
   background-color: var(--mubas-hero-box);
 
-  padding: 20px 60px;
+  padding: 83px 280px;
   display: flex;
   gap: 20px;
 
@@ -271,12 +316,13 @@ header {
     section {
       display: flex;
       flex-direction: column;
-      width: 350px;
+      width: 250px;
       background-color: var(--font-white);
       align-items: center;
 
       img {
         border-bottom: 8px solid var(--mubas-hero-box-next);
+      width: 250px;
       }
 
       h3 {
@@ -285,14 +331,16 @@ header {
 
       p:nth-child(3) {
         padding: 0px 65px 10px 65px;
+	font-size:14px;
         border-bottom: 2px solid var(--grey);
         flex-grow: 1;
         text-align: center;
       }
 
       p:last-child {
-        margin-top: 12px;
-        margin: 12px 0px 50px;
+	font-size:14px;
+	color:var(--title-black);
+        margin: 12px 0px 50px 0px;
       }
     }
 
@@ -306,12 +354,12 @@ header {
 
 .nav-container {
   font-family: Arial, sans-serif;
-  background: #37356b;
   padding: 15px;
 }
 
 .main-nav {
   list-style: none;
+  font-size:13px;
   padding: 0;
   margin: 0;
   display: flex;
@@ -486,4 +534,69 @@ header {
     flex-direction: column;
     align-items: center;
   }
+}
+
+#mubas-title{
+font-size:25px;
+text-align:center;
+
+}
+.dropdown, .main-nav>li{
+display:flex;
+align-items:center;
+justify-items:center;
+
+}
+[alt="mubas-logo"]{
+position:absolute;
+top:31px;
+left:105px;
+
+}
+#publicnotes{
+	padding:0px 4px;
+	text-align:center;
+}
+
+.boxOpen{
+
+/* transform:translate(0px,0px); */
+}
+.box1{
+  background-image: url("https://mubas.ac.mw/images/slider/slide1.jpg");
+}
+
+.box2{
+  background-image: url("https://mubas.ac.mw/images/slider/slide2.jpg");
+
+}
+.box3{
+
+  background-image: url("https://mubas.ac.mw/images/slider/slide3.jpg");
+}
+
+.herobox {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Full screen height or adjust */
+  position: relative;
+}
+
+.herobox .hero {
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Example background */
+}
+.mubas-box-info{
+
+	h2:last-child{
+
+font-family:'times new roman',sans-serif;
+	}
+
 }
