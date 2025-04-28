@@ -90,6 +90,9 @@ header {
   color: var(--font-white);
   justify-content: center;
   align-items: center;
+  background-size: cover; 
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 
   section {
     section {
