@@ -83,16 +83,7 @@ header {
   margin-left: 90px;
 }
 
-.hero {
-  background-image: url("https://mubas.ac.mw/images/slider/slide1.jpg");
-  height: 500px;
-  display: flex;
-  color: var(--font-white);
-  justify-content: center;
-  align-items: center;
-  background-size: cover; 
-  background-position: center;
-  transition: background-image 1s ease-in-out;
+
 
   section {
     section {
